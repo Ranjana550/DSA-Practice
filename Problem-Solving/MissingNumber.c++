@@ -3,7 +3,7 @@ Given an array nums containing n distinct numbers in the range [0, n], return th
  ***/
 #include<iostream>
 using namespace std;
-//Aproach 1 - simple sum of n numbers formula
+//Aproach 1 - Sum of n numbers formula
 int MissingNumber(int nums[], int len) {
         int target = (len+1)*(len+2)/2;
         int sum=0;
