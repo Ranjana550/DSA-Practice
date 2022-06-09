@@ -6,7 +6,7 @@ int swap(int arr[], int first, int second){
     arr[first]=arr[second];
     arr[second]=temp;
 }
-
+//Insertion sort method
 int InsertionSort(int arr[], int size){
     for(int i=0; i<size-1; i++){
         for(int j=i+1; j>0; j--){
