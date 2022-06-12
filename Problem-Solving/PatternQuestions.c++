@@ -313,6 +313,20 @@ int Pattern5(int n){
     }
 
 }
+int Pattern28(int n){
+    for(int rows=0; rows<=2*n; rows++){
+        int TotalColsInParticularRow = rows>n ? 2*n-rows : rows;
+        int noOfspaces = n-TotalColsInParticularRow;
+        for(int s=0; s<noOfspaces; s++){
+            cout<<" ";
+        }
+        for(int cols=0; cols<=TotalColsInParticularRow; cols++){
+            cout<<"*"<<" ";
+        }
+        cout<<endl;
+    }
+
+}
 
 
 int main(){
@@ -321,5 +335,6 @@ int main(){
     //Pattern3(5);
     //Pattern4(5);
     //Pattern5(5);
+    //Pattern28(5);
 
 }
