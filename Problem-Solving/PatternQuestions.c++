@@ -357,13 +357,16 @@ int Pattern17(int n){
     }
 }
 int Pattern31(int n){
-    int originaln=n;
-    n=2*n;
-    for(int rows=0; rows<=n; rows++){
-        for(int cols=0; cols<=n; cols++){
-            int atEveryIndex = originaln-min(min(rows,cols), min(n-rows, n-cols));
-            cout<<atEveryIndex<<" ";
-
+    int totalrows = 2*n-1;
+    for(int rows=1; rows<=totalrows; rows++){
+        for(int cols=1; cols<=totalrows; cols++){
+        int min1 = rows<=totalrows-rows ? rows -1 : totalrows-rows;
+       
+        int min2 = cols<=totalrows-cols ? cols -1: totalrows-cols;
+        
+        int min = min1<=min2 ? min1 : min2;
+          
+        cout<<n-min<<" ";
         }
         cout<<endl;
     }
