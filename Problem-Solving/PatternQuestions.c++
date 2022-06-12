@@ -267,6 +267,7 @@
        12344321
 **/
 #include<iostream>
+#include <algorithm>
 using namespace std;
 
 int Pattern1(int n){
@@ -355,6 +356,19 @@ int Pattern17(int n){
         cout<<endl;
     }
 }
+int Pattern31(int n){
+    int originaln=n;
+    n=2*n;
+    for(int rows=0; rows<=n; rows++){
+        for(int cols=0; cols<=n; cols++){
+            int atEveryIndex = originaln-min(min(rows,cols), min(n-rows, n-cols));
+            cout<<atEveryIndex<<" ";
+
+        }
+        cout<<endl;
+    }
+}
+
 
 
 
@@ -366,7 +380,9 @@ int main(){
     //Pattern5(5);
     //Pattern28(5);
     //Pattern30(5);
-    Pattern17(4);
+    //Pattern17(4);
+    Pattern31(4);
+
 
 
 }
