@@ -384,8 +384,5 @@ int main(){
     //Pattern28(5);
     //Pattern30(5);
     //Pattern17(4);
-    Pattern31(4);
-
-
-
+    //Pattern31(4);
 }
