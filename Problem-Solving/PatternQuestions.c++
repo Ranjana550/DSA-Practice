@@ -339,7 +339,21 @@ int Pattern30(int n){
         }
         cout<<endl;
     }
-
+}
+int Pattern17(int n){
+    for(int rows=1; rows<=2*n; rows++){
+        int TotalColsInParticularRow = rows>n ? 2*n-rows : rows;
+        for(int s=0; s<n-TotalColsInParticularRow; s++){
+            cout<<" ";
+        } 
+        for(int cols=TotalColsInParticularRow; cols>=1; cols--){
+            cout<<cols;
+        }
+        for(int cols=2; cols<=TotalColsInParticularRow; cols++){
+            cout<<cols;
+        }
+        cout<<endl;
+    }
 }
 
 
@@ -352,5 +366,7 @@ int main(){
     //Pattern5(5);
     //Pattern28(5);
     //Pattern30(5);
+    Pattern17(4);
+
 
 }
