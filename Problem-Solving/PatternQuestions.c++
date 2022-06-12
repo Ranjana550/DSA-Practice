@@ -325,8 +325,23 @@ int Pattern28(int n){
         }
         cout<<endl;
     }
+}
+int Pattern30(int n){
+    for(int rows=1; rows<=n; rows++){
+        for(int s=0; s<n-rows; s++){
+            cout<<"  ";
+        }
+        for(int cols=rows; cols>=1; cols--){
+            cout<<cols<<" ";
+        }
+        for(int cols=2; cols<=rows; cols++){
+            cout<<cols<<" ";
+        }
+        cout<<endl;
+    }
 
 }
+
 
 
 int main(){
@@ -336,5 +351,6 @@ int main(){
     //Pattern4(5);
     //Pattern5(5);
     //Pattern28(5);
+    //Pattern30(5);
 
 }
