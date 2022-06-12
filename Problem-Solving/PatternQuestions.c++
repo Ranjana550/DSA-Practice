@@ -303,6 +303,16 @@ int Pattern4(int n){
         cout<<endl;
     }
 }
+int Pattern5(int n){
+    for(int rows=0; rows<=2*n; rows++){
+        int TotalColsInParticularRow = rows>n ? 2*n-rows : rows;
+        for(int cols=0; cols<=TotalColsInParticularRow; cols++){
+            cout<<"*"<<" ";
+        }
+        cout<<endl;
+    }
+
+}
 
 
 int main(){
@@ -310,5 +320,6 @@ int main(){
     //Pattern2(5);
     //Pattern3(5);
     //Pattern4(5);
+    //Pattern5(5);
 
 }
