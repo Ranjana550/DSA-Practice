@@ -27,6 +27,4 @@ int main(){
         }
         int result = *max_element(vec.begin(), vec.end());
         cout<<result;
-
-
 }
