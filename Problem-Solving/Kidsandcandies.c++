@@ -19,8 +19,8 @@ Explanation: If you give all extraCandies to:
 using namespace std;
 
 int main(){
-    vector<int> candies = {2,3,5,1,3};
-    int n = 3;
+    vector<int> candies = {4,2,1,1,2};
+    int n = 1;
     vector<bool> ans;
     int max = *max_element(candies.begin(), candies.end());
     
