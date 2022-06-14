@@ -21,7 +21,7 @@ using namespace std;
 int main(){
     vector<int> candies = {2,3,5,1,3};
     int n = 3;
-    vector<int> ans;
+    vector<bool> ans;
     int max = *max_element(candies.begin(), candies.end());
     
     
@@ -29,9 +29,9 @@ int main(){
     
         int add = candies[i]+n;
         if(add>=max){
-            ans.push_back(1);
+            ans.push_back(true);
         }else{
-            ans.push_back(0);
+            ans.push_back(false);
         }
     }
     for(int i=0; i<ans.size(); i++){
