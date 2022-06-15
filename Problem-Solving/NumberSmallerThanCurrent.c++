@@ -18,7 +18,7 @@ For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    vector<int> nums = {8,1,2,2,3};
+    vector<int> nums = {6,5,4,8};
     vector<int> soln(nums.size());
    
     for(int i=0; i<nums.size(); i++){
