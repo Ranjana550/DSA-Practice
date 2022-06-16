@@ -17,3 +17,23 @@ nums       index     target
 3            2        [0,1,3,2]
 4            1        [0,4,1,3,2]
  */
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    vector<int> nums = {0,1,2,3,4};
+    vector<int> index = {0,1,2,2,1};
+    vector<int> res(nums.size());
+   
+    for(int i = 0; i < nums.size(); i ++){
+
+            for(int j = i - 1; j >= index[i]; j --)
+                res[j + 1] = res[j];
+            res[index[i]] = nums[i];
+        }
+    
+    for(int k=0; k<res.size(); k++){
+        cout<<res[k]<<" ";
+    }
+}
