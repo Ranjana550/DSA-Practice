@@ -32,7 +32,7 @@ bool checkPangram(string str){
     
     for(int k=0; k<soln.size(); k++){
         if(soln[k]==false){
-            return(false);
+            return false;
 
         }
         return true;
@@ -43,8 +43,8 @@ bool checkPangram(string str){
 int main(){
     string str = "Leetcode" ;
     if (checkPangram(str) == true)
-        cout<<"Yes";
+        cout<<"true";
     else
-        cout<<"No";
+        cout<<"false";
     
 }
