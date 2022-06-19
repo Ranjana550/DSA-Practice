@@ -41,7 +41,7 @@ bool checkPangram(string str){
 
 }
 int main(){
-    string str = "thequickbrownfoxjumpsoverthelazydog" ;
+    string str = "Leetcode" ;
     if (checkPangram(str) == true)
         cout<<"Yes";
     else
