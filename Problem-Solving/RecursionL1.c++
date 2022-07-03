@@ -60,6 +60,28 @@ int reverse4(int num){
     num = stoi(strin);
     return num;
 }
+int sumofnnumbers1(int num){
+    int sum=0;
+    int rem=0;
+     if(num==0){
+        return 0;
+    }
+    while(num>0){
+    rem = num%10;
+    num=num/10;
+    sum = sum + rem;
+    }
+    return sum;
+
+}
+int sumofnnumbers2(int num){
+    int sum=0;
+    if(num==0){
+        return 0;
+    }
+    return num%10 + sumofnnumbers2(num/10);
+
+}
 
 int main(){
     int fact1 = factorial1(5); //using while
@@ -74,8 +96,10 @@ int main(){
     cout<<rev3<<endl;
     int rev4 = reverse4(1234); //using in buit string functions
     cout<<rev4<<endl;
-
-    //sumofnnumbers(5);
+    int sum1 = sumofnnumbers1(5321); //using while
+    cout<<sum1<<endl;
+    int sum2 = sumofnnumbers2(5321); //using recursion
+    cout<<sum2<<endl;
     //productofnnumbers(5);
     //palindorme(1234321);
     //countzeros(10040);
