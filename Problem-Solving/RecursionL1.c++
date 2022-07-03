@@ -1,6 +1,6 @@
 /**
- 1. factorial
- 2. reverse
+ 1. Factorial of a number
+ 2. Reverse
  3. sum of n numbers
  4. product of 1 to n
  5. sum of digita
