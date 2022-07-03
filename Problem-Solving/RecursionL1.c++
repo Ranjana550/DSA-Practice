@@ -1,12 +1,10 @@
 /**
  1. Factorial of a number
  2. Reverse
- 3. sum of n numbers
- 4. product of 1 to n
- 5. sum of digita
- 6. product of digits
- 7. palindrome
- 8. count zeros
+ 3. Sum of Digits of a number
+ 4. Product of digit of a number
+ 5. palindrome
+ 6. count zeros
  */
 #include<iostream>
 #include<bits/stdc++.h>
