@@ -105,16 +105,30 @@ int productofnnumbers2(int num){
 bool palindrome1(int num){
  return num == reverse1(num);
 }
-int reverse1(int num){
+int countzeros1(int num){
     int rem=0;
-    int rev_num = 0;
+    int cnt = 0;
     while(num!=0){
         rem = num%10;
-        rev_num = rev_num*10+rem;
-        num=num/10; 
+        num=num/10;
+        if(rem == 0){
+            cnt++;
+        } 
+        
     }
-    return rev_num;
-   
+    return cnt;  
+}
+int countzeros2(int num){
+   static int count=0;
+    if(num>0)
+    {
+
+        if(num%10==0)
+        count++;
+
+        countzeros2(num/10);
+    }
+    return count;
 }
 
 int main(){
@@ -139,6 +153,9 @@ int main(){
     int prod2 = productofnnumbers2(55); //using recursion
     cout<<prod2<<endl;
     cout<<palindrome1(12321)<<endl; //using simple recursion - checked originum and revnum are same or not
-    int cnt1 = countzeros(10040); 
+    int cnt1 = countzeros1(10040);  //using while
+    cout<<cnt1<<endl;
+    int cnt2 = countzeros2(10040);  //using recursion
+    cout<<cnt2<<endl;
 
 }
