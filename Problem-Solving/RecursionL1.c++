@@ -75,12 +75,46 @@ int sumofnnumbers1(int num){
 
 }
 int sumofnnumbers2(int num){
-    int sum=0;
     if(num==0){
         return 0;
     }
     return num%10 + sumofnnumbers2(num/10);
 
+}
+int productofnnumbers1(int num){
+     int prod=1;
+    int rem=0;
+     if(num==0){
+        return 0;
+    }
+    while(num>0){
+    rem = num%10;
+    num=num/10;
+    prod = prod * rem;
+    }
+    return prod;
+
+}
+int productofnnumbers2(int num){
+    if(num==0){
+        return 1;
+    }
+    return num%10 * productofnnumbers2(num/10);
+
+}
+bool palindrome1(int num){
+ return num == reverse1(num);
+}
+int reverse1(int num){
+    int rem=0;
+    int rev_num = 0;
+    while(num!=0){
+        rem = num%10;
+        rev_num = rev_num*10+rem;
+        num=num/10; 
+    }
+    return rev_num;
+   
 }
 
 int main(){
@@ -92,7 +126,7 @@ int main(){
     cout<<rev1<<endl;
     reverse2(1234); //using simple print in reverse(rem)
     cout<<endl;    
-    int rev3 = reverse3(1234); //using recursion
+    int rev3 = reverse3(12321); //using recursion
     cout<<rev3<<endl;
     int rev4 = reverse4(1234); //using in buit string functions
     cout<<rev4<<endl;
@@ -100,8 +134,11 @@ int main(){
     cout<<sum1<<endl;
     int sum2 = sumofnnumbers2(5321); //using recursion
     cout<<sum2<<endl;
-    //productofnnumbers(5);
-    //palindorme(1234321);
-    //countzeros(10040);
+    int prod1 = productofnnumbers1(55); //using while
+    cout<<prod1<<endl;
+    int prod2 = productofnnumbers2(55); //using recursion
+    cout<<prod2<<endl;
+    cout<<palindrome1(12321)<<endl; //using simple recursion - checked originum and revnum are same or not
+    int cnt1 = countzeros(10040); 
 
 }
