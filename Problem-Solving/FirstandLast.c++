@@ -6,7 +6,10 @@ Example 1:
 Input: nums = [5,7,7,8,8,10], target = 8
 Output: [3,4]
 **/
-
+/**
+ using binary search also possible
+ just run in two times for first occ and last occ;
+ **/
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
