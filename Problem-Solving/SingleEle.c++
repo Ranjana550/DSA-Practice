@@ -9,9 +9,9 @@ Output: 2
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
-class Solution {
-public:
-     int singleNonDuplicate(vector<int>& arr){
+
+int singleNonDuplicate(vector<int>& nums)
+{
          int n=nums.size();
         int i=0,j=n-1;
         
@@ -40,8 +40,11 @@ public:
             
         }
         return nums[i];
+}
           
-};
 int main(){
+    vector<int>nums = {2,5,6,0,0,1,2};
+    int res = singleNonDuplicate(nums);
+    cout<<res;
 
 }

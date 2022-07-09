@@ -11,8 +11,9 @@ Example 1:
 Input: nums = [4,5,6,7,0,1,2], target = 0
 Output: 4
  ***/
-class Solution {
-public:
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
     int search(vector<int>& nums, int target) {
         int start = 0 , end = nums.size()-1;
         
@@ -42,4 +43,10 @@ public:
         return -1;
         
     }
-};
+
+int main(){
+    vector<int>nums = {2,5,6,0,1,2};
+    int target = 0;
+    int res = search(nums, target);
+    cout<<res;
+}
