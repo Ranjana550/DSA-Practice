@@ -1,5 +1,5 @@
 /***
-Check if number is present in an array or not 
+Find all duplicates
  ***/
 
 #include<iostream>
@@ -13,18 +13,20 @@ vector<int>findindex(vector<int>nums, int target, int index, vector<int>ans){
      if(nums[index]==target){
         ans.push_back(index);
         }
-    else{
+    
         return findindex(nums, target, index+1, ans);
-    }  
+      
 
 }
 int main(){
-    vector<int> nums={1,4,7,8,8,8,9};
+    vector<int> nums={1,4,8,7,6,7,8,9};
     vector<int> ans;
     int target = 8;
-   vector<int>res=findindex(nums, 8, 0, ans);
+   vector<int>res= findindex(nums, target, 0, ans);
    
-   
+   for(int i=0; i<res.size(); i++){
+    cout<<res[i]<<" ";
+   }
     
 }
 
