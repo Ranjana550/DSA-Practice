@@ -22,11 +22,8 @@ int main(){
     vector<int> nums={1,4,7,8,8,8,9};
     vector<int> ans;
     int target = 8;
-   vector<int>res;
-   res=findindex(nums, 8, 0, ans);
-   for(int i=0; i<ans.size(); i++){
-    cout<<ans[i]<<",";
-   }
+   vector<int>res=findindex(nums, 8, 0, ans);
+   
    
     
 }
