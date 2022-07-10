@@ -7,7 +7,7 @@ Check if number is present in an array or not
 using namespace std;
 
 bool LSwithRecursion(vector<int>nums, int target, int index){
-     if(index==nums.size()-1){
+     if(index==nums.size()){
         return false;
 
      }else{
