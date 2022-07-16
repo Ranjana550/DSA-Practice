@@ -39,5 +39,7 @@ public:
     }
 };
 int main(){
+    int n = 4, index = 2,  maxSum = 6;
+    
 
 }
